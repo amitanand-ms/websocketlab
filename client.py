@@ -9,7 +9,7 @@ import time
 
 async def client():
     ip = input("Enter IP address for WS Server: ")
-    uri = "ws://{0}:8080".format(ip)
+    uri = "ws://{0}:80".format(ip)
     print(uri)
     async with websockets.connect(uri) as websocket:
         # Allow user to enter username into command line
