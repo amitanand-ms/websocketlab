@@ -22,7 +22,7 @@ async def server(websocket, path):
             i = 1
 
 # Create websocket server
-start_server = websockets.serve(server, "localserver",8080)
+start_server = websockets.serve(server, "localserver",80)
 
 # Start and run websocket server forever
 asyncio.get_event_loop().run_until_complete(start_server)
